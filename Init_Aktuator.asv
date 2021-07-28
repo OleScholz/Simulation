@@ -36,9 +36,9 @@ Reibmoment = Momentenkonstante * Leerlaufstrom;     %[Nm]
 Motorreibkonstante = Reibmoment / (Leerlaufdrehzahl * 2 * pi / 60); %[Nms]
 
     %Regler
-I_Konstante = 10;       %[V/(s*°)]
-P_Konstante = 2;     %[V/°]
-D_Konstante = 0;       %[Vs/°]
+I_Konstante = 1;       %[]
+P_Konstante = 1;     %[V/°]
+D_Konstane = inf;       %[]
 
 disp(Motorreibkonstante);
 
