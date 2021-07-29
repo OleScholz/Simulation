@@ -15,23 +15,23 @@ Moment_aero = 255.25;       %[Nm/rad]
 
 
 Traegheitsmoment_GF = 0.054;   %  [kg/m^2]
-Traegheitsmoment_Motor = 0.000138;   %  [kg/m^2]
+Traegheitsmoment_Motor = 10.5/10000000;   %  [kg/m^2]
 Traegheitsmoment_Getriebe = 0.005;  %  [kg/m^2]
 Reibung = 1;                %[Nms]  Getriebe, Lager, ohne Motor
-Uebersetzung = 10;
+Uebersetzung = 19683/64;
 
 
     %Motorberechung
-Spannung_max = 18;         %[V]
-Spannung = 8;             %[V]
-Drehzahlkonstante = 208;   %[U/(min V)]
-Momentenkonstante = 0.046;   %[Nm/A]
-Steigung = 275;             %[U/(min Nm)]
+Spannung_max = 12;         %[V]
+%Spannung = 8;             %[V]     Von nun an geregelt
+Drehzahlkonstante = 1070;   %[U/(min V)]
+Momentenkonstante = 8.95/1000;   %[Nm/A]
+Steigung = 27.1*1000;             %[U/(min Nm)]
 
 
-Nennspannung = 18;  %[V]
+Nennspannung = 12;  %[V]
 Leerlaufdrehzahl = Nennspannung * Drehzahlkonstante;    %[U/min]
-Leerlaufstrom = 0.755;    %[A]
+Leerlaufstrom = 522/1000;    %[A]
 Reibmoment = Momentenkonstante * Leerlaufstrom;     %[Nm]
 Motorreibkonstante = Reibmoment / (Leerlaufdrehzahl * 2 * pi / 60); %[Nms]
 
