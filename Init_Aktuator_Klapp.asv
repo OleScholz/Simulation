@@ -24,10 +24,10 @@ Momentenkonstante = 21.2/1000;      %[Nm/A]
 Kennliniensteigung = 106*1000;      %[U/(min Nm)]
 
 
-%Regler                                   U_max = 12        U_max = 4
-I_Konstante = -1.18;       %[V/(s*°)]     -2.17             -1.18
-P_Konstante = 30;          %[V/°]         15                30
-D_Konstante = 0;           %[Vs/°]        0                 0
+%Regler
+I_Konstante = -2.17;       %[V/(s*°)]     -2.17
+P_Konstante = 15;     %[V/°]             15
+D_Konstante = 0;       %[Vs/°]          0
 
 %set_param('Aktuator_Klapp','AlgebraicLoopSolver','TrustRegion')
 set_param('Aktuator_Klapp','AlgebraicLoopSolver','LineSearch')

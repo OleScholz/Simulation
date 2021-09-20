@@ -41,10 +41,10 @@ Leerlaufstrom = 522/1000;    %[A]
 %Trägheitsmomente
 Traegheitsmoment_GF = 0.054;                %  [kgm^2]
 Traegheitsmoment_Motor = 10.5/10000000;     %  [kgm^2]
-Traegheitsmoment_Getriebe = 0.005;          %  [kgm^2]
-Traegheitsmoment_Welle = 0.006;             %  [kgm^2]
+Traegheitsmoment_Getriebe = 7.5/1000^2;          %  [kgm^2]
+Traegheitsmoment_Welle = 0.001;             %  [kgm^2]
 Masse_Hubakuatorik = 0.117 + 0.3 + 0.052 + 0.044 + 0.015 + 0.014;   %[kg]
-Abstand_Hubaktuatorik = 0.032;              %  [m]
+Abstand_Hubaktuatorik = 0.0225;              %  [m]
 Traegheitsmoment_gesamt =   Traegheitsmoment_GF + Traegheitsmoment_Motor/Uebersetzung + Traegheitsmoment_Getriebe + Traegheitsmoment_Welle + Masse_Hubakuatorik * Abstand_Hubaktuatorik^2;       %[kgm^2]
                                             %  [kgm^2]
 
